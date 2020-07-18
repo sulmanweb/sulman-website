@@ -1,11 +1,18 @@
 <template>
   <div id="app">
-    <router-view />
+    <comp-top-bar />
+    <main class="max-w-6xl mx-auto">
+      <router-view />
+    </main>
   </div>
 </template>
 
 <script>
+import compTopBar from "@/components/compTopBar.vue";
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    compTopBar
+  }
 };
 </script>
