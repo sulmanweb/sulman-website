@@ -1,0 +1,13 @@
+version: "3"
+services:
+
+  front:
+    build: ./front
+    ports:
+      - "8080:8080" # use port that you want to in your local instead of 8091
+    volumes:
+      - ./front:/front
+      - front_node_modules:/front/node_modules
+
+volumes:
+  front_node_modules:
