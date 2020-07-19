@@ -1,7 +1,7 @@
 <template>
   <div class="bg-cool-gray-700 w-full">
     <div
-      class="max-w-screen-xl mx-auto py-6 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+      class="max-w-5xl mx-auto py-6 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
     >
       <div class="flex justify-center md:order-2">
         <a
@@ -46,10 +46,12 @@
         </a>
       </div>
       <div class="mt-4 md:mt-0 md:order-1">
-        <p
-          class="text-center text-base leading-6 text-cool-gray-400"
-        >&copy; 2020 SulmanWeb. All rights reserved.</p>
-        <div class="text-center text-sm leading-6 text-cool-gray-400 tracking-wide">
+        <p class="text-center text-base leading-6 text-cool-gray-400">
+          &copy; 2020 SulmanWeb. All rights reserved.
+        </p>
+        <div
+          class="text-center text-sm leading-6 text-cool-gray-400 tracking-wide"
+        >
           Powered By
           <a href="https://dev.to/" target="_blank" class="mx-1">
             <font-awesome-icon :icon="['fab', 'dev']" class="text-base" />
@@ -71,7 +73,10 @@
             </svg>
           </a>
           <a href="https://fontawesome.com/" target="_blank" class="mx-1">
-            <font-awesome-icon :icon="['fab', 'font-awesome']" class="text-base" />
+            <font-awesome-icon
+              :icon="['fab', 'font-awesome']"
+              class="text-base"
+            />
           </a>
           <a href="https://www.netlify.com/" target="_blank" class="mx-1">
             <svg
@@ -97,6 +102,6 @@
 
 <script>
 export default {
-  name: "compFooter"
+  name: "compFooter",
 };
 </script>

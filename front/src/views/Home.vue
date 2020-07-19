@@ -128,10 +128,10 @@
         </div>
       </div>
       <div class="flex justify-center items-center mt-10">
-        <a
-          href="#"
+        <router-link
+          to="/blog"
           class="flex align-middle bg-cool-gray-900 px-4 py-2 rounded-lg"
-          >More Articles</a
+          >More Articles</router-link
         >
       </div>
     </div>

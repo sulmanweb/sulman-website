@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <comp-top-bar />
-    <main class="max-w-6xl mx-auto">
+    <main class="max-w-5xl mx-auto">
       <router-view />
     </main>
     <comp-footer />

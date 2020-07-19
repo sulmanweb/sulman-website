@@ -4,7 +4,7 @@ import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 import { library } from "@fortawesome/fontawesome-svg-core";
-// import { faFacebook } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faTwitter,
@@ -21,7 +21,9 @@ library.add(
   faGithubAlt,
   faDev,
   faLinkedin,
-  faFontAwesome
+  faFontAwesome,
+  faBars,
+  faTimes
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
