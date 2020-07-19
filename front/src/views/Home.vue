@@ -102,7 +102,7 @@
         <div class="mt-12 border-t-2 border-gray-100 pt-12">
           <div v-for="post in latestPosts" :key="post.id">
             <div class="my-2 py-3 border-cool-gray-300 border-b-2">
-              <a href="#">
+              <router-link :to="'/blog/' + post.slug">
                 <div class="flex text-sm leading-5 text-gray-400">
                   <time>
                     {{ post.readable_publish_date }}
@@ -122,7 +122,7 @@
                     {{ post.description }}
                   </p>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>

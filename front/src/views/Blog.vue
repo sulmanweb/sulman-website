@@ -12,7 +12,7 @@
       :key="post.id"
       class="bg-cool-gray-700 overflow-hidden shadow-xl sm:rounded my-2"
     >
-      <a href="#">
+      <router-link :to="'/blog/' + post.slug">
         <div class="md:grid md:grid-cols-4 md:gap-4">
           <div class="col-span-1">
             <img
@@ -35,7 +35,7 @@
             <p class="text-sm tracking-wide py-2">{{ post.description }}</p>
           </div>
         </div>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>

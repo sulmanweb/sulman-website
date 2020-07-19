@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css"
+    />
     <title>SulmanWeb</title>
   </head>
   <body class="bg-cool-gray-500 text-cool-gray-200">
@@ -21,5 +25,12 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+    <script>
+      document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelectorAll("pre code").forEach((block) => {
+          hljs.highlightBlock(block);
+        });
+      });
+    </script>
   </body>
 </html>
