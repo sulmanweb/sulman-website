@@ -9,13 +9,13 @@
 </template>
 
 <script>
-import compTopBar from "@/components/compTopBar.vue";
-import compFooter from "@/components/compFooter.vue";
+import CompTopBar from "@/components/compTopBar.vue";
+import CompFooter from "@/components/compFooter.vue";
 export default {
   name: "App",
   components: {
-    compTopBar,
-    compFooter
-  }
+    CompTopBar,
+    CompFooter,
+  },
 };
 </script>
