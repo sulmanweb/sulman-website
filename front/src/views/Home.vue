@@ -99,41 +99,12 @@
             <a href="https://dev.to/sulmanweb" target="_blank">Dev.to</a>
           </p>
         </div>
-        <div
-          class="mt-12 grid gap-16 border-t-2 border-gray-100 pt-12 lg:grid-cols-3 lg:col-gap-5 lg:row-gap-12"
-        >
+        <div class="mt-12 border-t-2 border-gray-100 pt-12">
           <div v-for="post in latestPosts" :key="post.id">
-            <div>
-              <a href="#" class="inline-block">
-                <span
-                  class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-green-200 text-green-900"
-                >
-                  {{
-                    post.type_of.charAt(0).toUpperCase() + post.type_of.slice(1)
-                  }}
-                </span>
-              </a>
-            </div>
-            <a href="#" class="block">
-              <h3 class="mt-4 text-xl leading-7 font-semibold text-gray-200">
-                {{ post.title }}
-              </h3>
-              <p class="mt-3 text-base leading-6 text-gray-300">
-                {{ post.description }}
-              </p>
-            </a>
-            <div class="mt-4 flex items-center">
-              <div class="">
-                <!-- <p class="text-sm leading-5 font-medium text-gray-200">
-                  <span v-for="tag in post.tag_list" :key="tag" class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium leading-4 bg-red-100 text-red-800">
-                    <svg class="-ml-0.5 mr-1.5 h-2 w-2 text-red-400" fill="currentColor" viewBox="0 0 8 8">
-                      <circle cx="4" cy="4" r="3" />
-                    </svg>
-                    {{ tag }}
-                  </span>
-                </p> -->
+            <div class="my-2 py-3 border-cool-gray-300 border-b-2">
+              <a href="#">
                 <div class="flex text-sm leading-5 text-gray-400">
-                  <time datetime="2020-03-10">
+                  <time>
                     {{ post.readable_publish_date }}
                   </time>
                   <span class="mx-1">
@@ -141,7 +112,17 @@
                   </span>
                   <span> {{ post.public_reactions_count }} Reactions </span>
                 </div>
-              </div>
+                <div class="block">
+                  <h3
+                    class="mt-4 text-xl leading-7 font-semibold text-gray-200"
+                  >
+                    {{ post.title }}
+                  </h3>
+                  <p class="mt-3 text-base leading-6 text-gray-300">
+                    {{ post.description }}
+                  </p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -169,7 +150,7 @@ export default {
     async getLatestPosts() {
       try {
         let response = await axios.get(
-          "https://dev.to/api/articles?username=sulmanweb&per_page=6"
+          "https://dev.to/api/articles?username=sulmanweb&per_page=5"
         );
         this.latestPosts = response.data;
       } catch (err) {
