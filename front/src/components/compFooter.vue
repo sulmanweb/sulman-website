@@ -44,14 +44,19 @@
           <span class="sr-only">Dev.to</span>
           <font-awesome-icon :icon="['fab', 'dev']" class="text-2xl" />
         </a>
+        <a
+          href="mailto:sulmanweb@gmail.com"
+          class="ml-6 text-cool-gray-400 hover:text-cool-gray-500"
+        >
+          <span class="sr-only">sulmanweb@gmail.com</span>
+          <font-awesome-icon :icon="['fas', 'at']" class="text-2xl" />
+        </a>
       </div>
       <div class="mt-4 md:mt-0 md:order-1">
-        <p class="text-center text-base leading-6 text-cool-gray-400">
-          &copy; 2020 SulmanWeb. All rights reserved.
-        </p>
-        <div
-          class="text-center text-sm leading-6 text-cool-gray-400 tracking-wide"
-        >
+        <p
+          class="text-center text-base leading-6 text-cool-gray-400"
+        >&copy; 2020 SulmanWeb. All rights reserved.</p>
+        <div class="text-center text-sm leading-6 text-cool-gray-400 tracking-wide">
           Powered By
           <a href="https://dev.to/" target="_blank" class="mx-1">
             <font-awesome-icon :icon="['fab', 'dev']" class="text-base" />
@@ -73,10 +78,7 @@
             </svg>
           </a>
           <a href="https://fontawesome.com/" target="_blank" class="mx-1">
-            <font-awesome-icon
-              :icon="['fab', 'font-awesome']"
-              class="text-base"
-            />
+            <font-awesome-icon :icon="['fab', 'font-awesome']" class="text-base" />
           </a>
           <a href="https://www.netlify.com/" target="_blank" class="mx-1">
             <svg
@@ -102,6 +104,6 @@
 
 <script>
 export default {
-  name: "compFooter",
+  name: "compFooter"
 };
 </script>

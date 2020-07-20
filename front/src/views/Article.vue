@@ -2,21 +2,33 @@
   <div class="page-article my-2">
     <div class="bg-cool-gray-700 overflow-hidden shadow-xl sm:rounded">
       <div class="flex flex-col justify-center">
-        <img v-if="!!post.cover_image" :src="post.cover_image" :alt="post.title" />
-        <img v-if="!post.cover_image" src="@/assets/images/SulmanWeb-cover.png" :alt="post.title" />
-        <p
-          class="px-4 pt-1 text-xs text-cool-gray-400 italic"
-        >{{post.readable_publish_date}} &middot; {{post.public_reactions_count}} Reactions</p>
+        <img
+          v-if="!!post.cover_image"
+          :src="post.cover_image"
+          :alt="post.title"
+        />
+        <img
+          v-if="!post.cover_image"
+          src="@/assets/images/SulmanWeb-cover.png"
+          :alt="post.title"
+        />
+        <p class="px-4 pt-1 text-xs text-cool-gray-400 italic">
+          {{ post.readable_publish_date }} &middot;
+          {{ post.public_reactions_count }} Reactions
+        </p>
         <p class="px-4 pt-1">
           <span
             class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium leading-5 bg-gray-100 text-gray-800 mr-1"
             v-for="tag in post.tags"
             :key="tag"
-          >{{tag}}</span>
+            >{{ tag }}</span
+          >
         </p>
         <h1
           class="text-2xl md:text-3xl font-semibold tracking-wider pt-1 pb-2 px-4"
-        >{{ post.title }}</h1>
+        >
+          {{ post.title }}
+        </h1>
       </div>
     </div>
     <div class="bg-cool-gray-700 overflow-hidden shadow-xl sm:rounded my-2">
@@ -26,18 +38,13 @@
 </template>
 
 <script>
-function highlight() {
-  document.addEventListener("load", event => {
-    document.querySelectorAll("pre.highlight").forEach(block => {
-      hljs.highlightBlock(block);
-    });
-  });
-}
+import hljs from "highlight.js";
+
 export default {
   name: "Article",
   data() {
     return {
-      post: {}
+      post: {},
     };
   },
   methods: {
@@ -50,16 +57,16 @@ export default {
       } catch (err) {
         console.error(err);
       }
-    }
+    },
   },
   mounted() {
     this.getPost();
   },
   updated() {
-    document.querySelectorAll("pre.highlight").forEach(block => {
+    document.querySelectorAll("pre.highlight").forEach((block) => {
       hljs.highlightBlock(block);
     });
-  }
+  },
 };
 </script>
 
@@ -73,7 +80,7 @@ export default {
   }
 }
 .article >>> img {
-  @apply mx-auto;
+  @apply mx-auto mt-2;
 }
 .article >>> h1 {
   @apply text-4xl;

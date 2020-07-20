@@ -4,7 +4,11 @@
       <div class="flex items-center h-16 justify-between md:justify-evenly">
         <div class="flex items-center">
           <div class="flex-shrink-0">
-            <img class="h-12 w-12 rounded-full" src="@/assets/images/sulmanweb.jpg" alt="SulmanWeb" />
+            <img
+              class="h-12 w-12 rounded-full"
+              src="@/assets/images/sulmanweb.jpg"
+              alt="SulmanWeb"
+            />
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline">
@@ -16,7 +20,8 @@
                     ? 'text-white bg-cool-gray-900'
                     : 'text-cool-gray-300',
                 ]"
-              >Home</router-link>
+                >Home</router-link
+              >
               <router-link
                 to="/blog"
                 class="ml-4 px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-cool-gray-700"
@@ -25,16 +30,18 @@
                     ? 'text-white bg-cool-gray-900'
                     : 'text-cool-gray-300',
                 ]"
-              >Blog</router-link>
-              <a
-                href="#"
+                >Blog</router-link
+              >
+              <router-link
+                to="/about"
                 class="ml-4 px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-cool-gray-700"
                 :class="[
                   $route.path.includes('about')
                     ? 'text-white bg-cool-gray-900'
                     : 'text-cool-gray-300',
                 ]"
-              >About</a>
+                >About</router-link
+              >
             </div>
           </div>
         </div>
@@ -69,7 +76,8 @@
               ? 'text-white bg-cool-gray-900'
               : 'text-cool-gray-300',
           ]"
-        >Home</router-link>
+          >Home</router-link
+        >
         <router-link
           to="/blog"
           class="mt-1 block px-3 py-2 rounded-md text-base font-medium"
@@ -78,7 +86,8 @@
               ? 'text-white bg-cool-gray-900'
               : 'text-cool-gray-300',
           ]"
-        >Blog</router-link>
+          >Blog</router-link
+        >
         <router-link
           to="/about"
           class="mt-1 block px-3 py-2 rounded-md text-base font-medium"
@@ -87,7 +96,8 @@
               ? 'text-white bg-cool-gray-900'
               : 'text-cool-gray-300',
           ]"
-        >About</router-link>
+          >About</router-link
+        >
       </div>
     </div>
   </nav>
@@ -98,8 +108,8 @@ export default {
   name: "compTopBar",
   data() {
     return {
-      menuTopBarOpen: false
+      menuTopBarOpen: false,
     };
-  }
+  },
 };
 </script>
