@@ -30,7 +30,7 @@ Vue.component("font-awesome-icon", FontAwesomeIcon);
 
 // import index css file
 import "./assets/styles/index.css";
-import "./assets/scripts/highlight.pack.js";
+
 window.axios = require("axios");
 Vue.config.productionTip = false;
 
