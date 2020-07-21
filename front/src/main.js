@@ -3,6 +3,7 @@ import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
+import Meta from 'vue-meta';
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faTimes, faAt } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -28,6 +29,7 @@ library.add(
 );
 
 Vue.component("font-awesome-icon", FontAwesomeIcon);
+Vue.use(Meta);
 
 // import index css file
 import "./assets/styles/index.css";

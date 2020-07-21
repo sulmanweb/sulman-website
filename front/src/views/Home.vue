@@ -136,6 +136,57 @@ export default {
   },
   mounted() {
     this.getLatestPosts();
+  },
+  metaInfo() {
+    return {
+      title: "SulmanWeb",
+      meta: [
+        {
+          name: "description",
+          content:
+            "#RubyOnRails #NodeJS #VueJS Experienced Web App Dev in Lahore, Pakistan"
+        },
+        { property: "og:title", content: "SulmanWeb" },
+        { property: "og:site_name", content: "SulmanWeb" },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://sulmanweb.com" },
+        {
+          property: "og:image",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        },
+        {
+          property: "og:description",
+          content:
+            "#RubyOnRails #NodeJS #VueJS Experienced Web App Dev in Lahore, Pakistan"
+        },
+        { name: "twitter:card", content: "summary" },
+        {
+          name: "twitter:site",
+          content: "https://sulmanweb.com"
+        },
+        { name: "twitter:title", content: "SulmanWeb" },
+        {
+          name: "twitter:description",
+          content:
+            "#RubyOnRails #NodeJS #VueJS Experienced Web App Dev in Lahore, Pakistan"
+        },
+        { name: "twitter:creator", content: "@sulmanweb" },
+        {
+          name: "twitter:image:src",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        },
+        { itemprop: "name", content: "SulmanWeb" },
+        {
+          itemprop: "description",
+          content:
+            "#RubyOnRails #NodeJS #VueJS Experienced Web App Dev in Lahore, Pakistan"
+        },
+        {
+          itemprop: "image",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        }
+      ]
+    };
   }
 };
 </script>

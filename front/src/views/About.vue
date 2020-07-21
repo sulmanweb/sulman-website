@@ -5,10 +5,8 @@
       <div class="px-4 py-2">
         <h2
           id="about"
-          class="text-center text-2xl font-semibold  border-b-2 border-gray-400 pb-4"
-        >
-          About
-        </h2>
+          class="text-center text-2xl font-semibold border-b-2 border-gray-400 pb-4"
+        >About</h2>
         <p class="py-2">
           I worked for about 7 years in research areas and industry, have worked
           in web app development for 5 years.
@@ -45,20 +43,14 @@
       <div class="px-4 py-2">
         <h2
           id="social-links"
-          class="text-center text-2xl font-semibold  border-b-2 border-gray-400 pb-4"
-        >
-          Social Links
-        </h2>
+          class="text-center text-2xl font-semibold border-b-2 border-gray-400 pb-4"
+        >Social Links</h2>
         <ul class="list-disc px-4 pt-2 underline text-cool-gray-50">
           <li class="py-1">
-            <a href="https://www.linkedin.com/in/sulmanweb/" target="_blank"
-              >LinkedIn</a
-            >
+            <a href="https://www.linkedin.com/in/sulmanweb/" target="_blank">LinkedIn</a>
           </li>
           <li class="py-1">
-            <a href="https://www.facebook.com/sulmanwebdev" target="_blank"
-              >Facebook</a
-            >
+            <a href="https://www.facebook.com/sulmanwebdev" target="_blank">Facebook</a>
           </li>
           <li class="py-1">
             <a href="https://twitter.com/sulmanweb" target="_blank">Twitter</a>
@@ -80,10 +72,8 @@
       <div class="px-4 py-2">
         <h2
           id="experiences"
-          class="text-center text-2xl font-semibold  border-b-2 border-gray-400 pb-4"
-        >
-          Experiences
-        </h2>
+          class="text-center text-2xl font-semibold border-b-2 border-gray-400 pb-4"
+        >Experiences</h2>
         <div class="border-b-2 border-gray-400 pb-4 pt-8">
           <h3 class="text-xl font-medium">
             Software Engineer @
@@ -91,8 +81,7 @@
               class="underline"
               href="https://www.mailmunch.com"
               target="_blank"
-              >MailMunch</a
-            >
+            >MailMunch</a>
           </h3>
           <p class="text-sm italic">Aug 2019 - Continued</p>
           <p>
@@ -104,9 +93,11 @@
         <div class="border-b-2 border-gray-400 pb-4 pt-8">
           <h3 class="text-xl font-medium">
             Chief Technology Officer @
-            <a class="underline" href="https://goghoom.com" target="_blank"
-              >GoGhoom</a
-            >
+            <a
+              class="underline"
+              href="https://goghoom.com"
+              target="_blank"
+            >GoGhoom</a>
           </h3>
           <p class="text-sm italic">Jun 2018 – Aug 2019</p>
           <p>
@@ -124,8 +115,7 @@
               class="underline"
               href="https://www.facebook.com/MyZindagi.Pk/"
               target="_blank"
-              >myZindagi</a
-            >
+            >myZindagi</a>
           </h3>
           <p class="text-sm italic">Dec 2017 – Sep 2018</p>
           <p>
@@ -137,9 +127,11 @@
         <div class="border-b-2 border-gray-400 pb-4 pt-8">
           <h3 class="text-xl font-medium">
             Manager (Web Applications) @
-            <a class="underline" href="https://www.techtix.co" target="_blank"
-              >Techtix</a
-            >
+            <a
+              class="underline"
+              href="https://www.techtix.co"
+              target="_blank"
+            >Techtix</a>
           </h3>
           <p class="text-sm italic">Aug 2016 – Dec 2017</p>
           <p>
@@ -156,8 +148,7 @@
               class="underline"
               href="https://www.alchemative.com"
               target="_blank"
-              >Alchemative</a
-            >
+            >Alchemative</a>
           </h3>
           <p class="text-sm italic">Feb 2016 – Aug 2016</p>
           <p>
@@ -172,9 +163,11 @@
         <div class="border-b-2 border-gray-400 pb-4 pt-8">
           <h3 class="text-xl font-medium">
             Researcher @
-            <a class="underline" href="https://unige.it" target="_blank"
-              >Universita degli studi di Genova, Italy</a
-            >
+            <a
+              class="underline"
+              href="https://unige.it"
+              target="_blank"
+            >Universita degli studi di Genova, Italy</a>
           </h3>
           <p class="text-sm italic">May 2014 – Jan 2016</p>
           <p>
@@ -199,8 +192,7 @@
               class="underline"
               href="https://www.powersoft19.com"
               target="_blank"
-              >Powersoft19</a
-            >
+            >Powersoft19</a>
           </h3>
           <p class="text-sm italic">Sep 2013 – Apr 2014</p>
           <p>
@@ -217,8 +209,7 @@
               class="underline"
               href="https://www.linkedin.com/company/engineering-connections/about/"
               target="_blank"
-              >Engineering Connections</a
-            >
+            >Engineering Connections</a>
           </h3>
           <p class="text-sm italic">Jun 2013 – Nov 2013</p>
           <p>
@@ -234,10 +225,8 @@
       <div class="px-4 py-2">
         <h2
           id="publications"
-          class="text-center text-2xl font-semibold  border-b-2 border-gray-400 pb-4"
-        >
-          Publications
-        </h2>
+          class="text-center text-2xl font-semibold border-b-2 border-gray-400 pb-4"
+        >Publications</h2>
         <div class="border-b-2 border-gray-400 pb-4 pt-8">
           <h3 class="text-xl font-medium">
             A Hierarchical Bayesian Model for Crowd Emotions @
@@ -245,8 +234,7 @@
               class="underline"
               href="https://www.frontiersin.org/articles/10.3389/fncom.2016.00063/full"
               target="_blank"
-              >frontiersin.org</a
-            >
+            >frontiersin.org</a>
           </h3>
           <p class="text-sm italic">
             Jul 8, 2016 publication description frontiers in Computational
@@ -281,8 +269,7 @@
               class="underline"
               href="https://ieeexplore.ieee.org/document/7251966"
               target="_blank"
-              >ieeexplore.ieee.org</a
-            >
+            >ieeexplore.ieee.org</a>
           </h3>
           <p class="text-sm italic">
             Jul 24, 2015 publication description digital Signal Processing
@@ -316,16 +303,16 @@
       <div class="px-4 py-2">
         <h2
           id="education"
-          class="text-center text-2xl font-semibold  border-b-2 border-gray-400 pb-4"
-        >
-          Education
-        </h2>
+          class="text-center text-2xl font-semibold border-b-2 border-gray-400 pb-4"
+        >Education</h2>
         <div class="pb-4 pt-8">
           <h3 class="text-xl font-medium">
             BSc. Electrical Engineering @
-            <a class="underline" href="https://uol.edu.pk/" target="_blank"
-              >University of Lahore</a
-            >
+            <a
+              class="underline"
+              href="https://uol.edu.pk/"
+              target="_blank"
+            >University of Lahore</a>
           </h3>
           <p class="text-sm italic">Jun 2007 – Aug 2013</p>
           <p>
@@ -350,5 +337,52 @@
 <script>
 export default {
   name: "About",
+  metaInfo() {
+    return {
+      title: "About <- SulmanWeb",
+      meta: [
+        {
+          name: "description",
+          content: "Learn more about SulmanWeb."
+        },
+        { property: "og:title", content: "SulmanWeb" },
+        { property: "og:site_name", content: "SulmanWeb" },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://sulmanweb.com/about" },
+        {
+          property: "og:image",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        },
+        {
+          property: "og:description",
+          content: "Learn more about SulmanWeb."
+        },
+        { name: "twitter:card", content: "summary" },
+        {
+          name: "twitter:site",
+          content: "https://sulmanweb.com/about"
+        },
+        { name: "twitter:title", content: "SulmanWeb" },
+        {
+          name: "twitter:description",
+          content: "Learn more about SulmanWeb."
+        },
+        { name: "twitter:creator", content: "@sulmanweb" },
+        {
+          name: "twitter:image:src",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        },
+        { itemprop: "name", content: "SulmanWeb" },
+        {
+          itemprop: "description",
+          content: "Learn more about SulmanWeb."
+        },
+        {
+          itemprop: "image",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        }
+      ]
+    };
+  }
 };
 </script>

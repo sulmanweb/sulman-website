@@ -63,6 +63,53 @@ export default {
   },
   mounted() {
     this.getPosts();
+  },
+  metaInfo() {
+    return {
+      title: "Blog <- SulmanWeb",
+      meta: [
+        {
+          name: "description",
+          content: "Blog Articles written by SulmanWeb"
+        },
+        { property: "og:title", content: "SulmanWeb" },
+        { property: "og:site_name", content: "SulmanWeb" },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: "https://sulmanweb.com/blog" },
+        {
+          property: "og:image",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        },
+        {
+          property: "og:description",
+          content: "Blog Articles written by SulmanWeb"
+        },
+        { name: "twitter:card", content: "summary" },
+        {
+          name: "twitter:site",
+          content: "https://sulmanweb.com/blog"
+        },
+        { name: "twitter:title", content: "SulmanWeb" },
+        {
+          name: "twitter:description",
+          content: "Blog Articles written by SulmanWeb"
+        },
+        { name: "twitter:creator", content: "@sulmanweb" },
+        {
+          name: "twitter:image:src",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        },
+        { itemprop: "name", content: "SulmanWeb" },
+        {
+          itemprop: "description",
+          content: "Blog Articles written by SulmanWeb"
+        },
+        {
+          itemprop: "image",
+          content: "https://sulmanweb.com/img/icons/android-chrome-192x192.png"
+        }
+      ]
+    };
   }
 };
 </script>
