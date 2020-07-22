@@ -55,6 +55,15 @@ export default {
     document.querySelectorAll("pre.highlight").forEach(block => {
       hljs.highlightBlock(block);
     });
+    var anchors = document.querySelectorAll("[class*=ltag] a");
+    for (var i = 0; i < anchors.length; i++) {
+      if (anchors[i].hostname === "sulmanweb.com") {
+        anchors[i].href = anchors[i].href.replace(
+          "https://sulmanweb.com",
+          "https://dev.to"
+        );
+      }
+    }
   },
   metaInfo() {
     return {
@@ -115,7 +124,7 @@ export default {
 
 <style scoped>
 .article {
-  @apply text-cool-gray-200 tracking-wide text-sm mx-2;
+  @apply text-cool-gray-200 tracking-wide text-sm mx-2 overflow-x-scroll;
 }
 @screen md {
   .article {
@@ -171,5 +180,132 @@ export default {
 }
 .article >>> .ltag__replit iframe {
   @apply max-w-7xl m-4;
+}
+
+/* ltag link */
+.article >>> .ltag__link {
+  @apply self-center max-w-xl border-2 p-4 flex items-center justify-around;
+}
+@screen md {
+  .article >>> .ltag__link {
+    @apply mx-40;
+  }
+  .article >>> .ltag__link h2 {
+    @apply text-2xl;
+  }
+  .article >>> .ltag__link h3 {
+    @apply text-xl;
+  }
+}
+.article >>> .ltag__link a {
+  @apply no-underline;
+}
+.article >>> .ltag__link img {
+  @apply rounded-full;
+}
+.article >>> .ltag__link h2 {
+  @apply text-lg;
+}
+.article >>> .ltag__link h3 {
+  @apply text-xs text-gray-500;
+}
+.article >>> .ltag__link .ltag__link__tag {
+  @apply text-xs;
+}
+.article >>> .ltag__link .ltag__link__link {
+  @apply pr-3;
+}
+
+/* ltag user link */
+
+.article >>> .ltag__user {
+  @apply self-center max-w-3xl border-2 border-cool-gray-50 flex items-center justify-around m-4;
+  border-width: 2px !important;
+  border-color: #f7fafc !important;
+  box-shadow: none !important;
+}
+@screen md {
+  .article >>> .ltag__user {
+    @apply mx-20 px-5 pt-2 pb-3;
+  }
+  .article >>> .ltag__user h2 {
+    font-size: 24px !important;
+  }
+  .article >>> .ltag__user__content {
+    @apply pl-4;
+  }
+  .article >>> .ltag__user__summary {
+    font-size: 12px !important;
+  }
+  .article >>> .ltag__user .ltag__user__social {
+    @apply text-center flex items-center text-cool-gray-50;
+  }
+}
+.article >>> .ltag__user a {
+  @apply no-underline;
+}
+.article >>> .ltag__user .ltag__user__content {
+  @apply pl-2;
+}
+.article >>> .ltag__user img {
+  @apply rounded-full mr-1 w-96;
+}
+.article >>> .ltag__user .icon-img {
+  @apply w-5 h-5 inline mt-0;
+}
+.article >>> .ltag__user h2 {
+  @apply text-lg;
+}
+.article >>> .ltag__user h3 {
+  @apply text-xs text-cool-gray-500;
+}
+.article >>> .ltag__user .ltag__user__user {
+  @apply pr-3;
+}
+.article >>> .ltag__user .ltag__user__social {
+  @apply text-cool-gray-50 text-xs;
+}
+.article >>> .ltag__user .ltag__user__social a {
+  @apply inline pt-2 ml-1;
+}
+
+/* ltag-github-readme-tag */
+.article >>> .ltag-github-readme-tag {
+  @apply self-center max-w-xl border-2 p-4  items-center justify-around;
+}
+@screen md {
+  .article >>> .ltag-github-readme-tag {
+    @apply mx-40;
+  }
+  .article >>> .ltag-github-readme-tag h2 {
+    @apply text-2xl;
+  }
+  .article >>> .ltag-github-readme-tag h3 {
+    @apply text-xl;
+  }
+}
+.article >>> .ltag-github-readme-tag .ltag-github-body {
+  @apply hidden;
+}
+.article >>> .ltag-github-readme-tag h1 {
+  @apply no-underline text-lg;
+}
+.article >>> .ltag-github-readme-tag h2 {
+  @apply no-underline text-sm;
+}
+.article >>> .ltag-github-readme-tag a {
+  @apply no-underline text-sm;
+}
+.article >>> .ltag-github-readme-tag img {
+  @apply w-5 mt-0 inline;
+}
+.article >>> .ltag-github-readme-tag .readme-overview {
+  @apply text-center;
+}
+.article >>> .ltag-github-readme-tag .gh-btn-container {
+  @apply text-center;
+}
+.article >>> .ltag-github-readme-tag .gh-btn {
+  @apply bg-cool-gray-900 px-4 py-2 rounded;
 }
 </style>
