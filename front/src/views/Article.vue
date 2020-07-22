@@ -56,6 +56,7 @@ export default {
       hljs.highlightBlock(block);
     });
     var anchors = document.querySelectorAll("[class*=ltag] a");
+    console.log(anchors);
     for (var i = 0; i < anchors.length; i++) {
       if (anchors[i].hostname === "sulmanweb.com") {
         anchors[i].href = anchors[i].href.replace(
