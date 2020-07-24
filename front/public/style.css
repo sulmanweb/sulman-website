@@ -1,0 +1,264 @@
+.article {
+  color: #edf2f7;
+  letter-spacing: 0.025em;
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  overflow-x: scroll;
+}
+@media (min-width: 768px) {
+  .article {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+}
+.article img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0.5rem;
+}
+.article h1 {
+  font-size: 2.25rem;
+}
+.article h2 {
+  font-size: 1.875rem;
+  font-weight: 600;
+}
+.article h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.article p {
+  font-size: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.75rem;
+}
+.article ul {
+  margin: 0.75rem;
+}
+.article li {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  list-style-type: disc;
+}
+.article blockquote {
+  border-left-width: 4px;
+  background-color: #2d3748;
+  border-color: #e2e8f0;
+  border-radius: 0.25rem;
+}
+.article blockquote::before {
+  color: #edf2f7;
+  font-size: 3rem;
+  line-height: 0.75rem;
+  content: open-quote;
+  vertical-align: -0.4em;
+}
+.article blockquote p {
+  display: inline;
+}
+.article a {
+  color: #fff;
+  text-decoration: underline;
+}
+.article li {
+  margin-left: 1rem;
+}
+.article pre {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 0.25rem;
+  font-family: "Fira Code", Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.article :not(pre) > code {
+  background-color: #1a202c;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  border-radius: 0.5rem;
+  font-family: "Fira Code", Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+.article blockquote {
+  padding: 2em;
+}
+.ltag__replit iframe {
+  max-width: 80rem !important;
+  margin: 1rem !important;
+}
+.ltag__link {
+  align-self: center !important;
+  max-width: 36rem !important;
+  border-width: 2px !important;
+  padding: 1rem !important;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+}
+@media (min-width: 768px) {
+  .ltag__link {
+    margin-right: 10rem !important;
+    margin-left: 10rem !important;
+  }
+  .ltag__link h2 {
+    font-size: 1.5rem !important;
+  }
+  .ltag__link h3 {
+    font-size: 1.25rem !important;
+  }
+}
+.ltag__link a {
+  text-decoration: none !important;
+}
+.ltag__link img {
+  border-radius: 9999px !important;
+}
+.ltag__link h2 {
+  font-size: 1.125rem !important;
+}
+.ltag__link h3 {
+  color: #a0aec0 !important;
+  font-size: 0.75rem !important;
+}
+.ltag__link .ltag__link__tag {
+  font-size: 0.75rem !important;
+}
+.ltag__link .ltag__link__link {
+  padding-right: 0.75rem !important;
+}
+.ltag__user {
+  align-self: center !important;
+  max-width: 48rem !important;
+  border-width: 2px !important;
+  border-color: #fff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  margin: 1rem !important;
+  border-width: 2px !important;
+  border-color: #f7fafc !important;
+  box-shadow: none !important;
+}
+@media (min-width: 768px) {
+  .ltag__user {
+    margin-right: 5rem !important;
+    margin-left: 5rem !important;
+    padding-right: 1.25rem !important;
+    padding-left: 1.25rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+  .ltag__user h2 {
+    font-size: 24px !important;
+  }
+  .ltag__user__content {
+    padding-left: 1rem !important;
+  }
+  .ltag__user__summary {
+    font-size: 12px !important;
+  }
+  .ltag__user .ltag__user__social {
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    color: #fff !important;
+  }
+}
+.ltag__user a {
+  text-decoration: none !important;
+}
+.ltag__user .ltag__user__content {
+  padding-left: 0.5rem !important;
+}
+.ltag__user img {
+  border-radius: 9999px !important;
+  margin-right: 0.25rem !important;
+  width: 24rem !important;
+}
+.ltag__user .icon-img {
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  display: inline !important;
+  margin-top: 0 !important;
+}
+.ltag__user h2 {
+  font-size: 1.125rem !important;
+}
+.ltag__user h3 {
+  font-size: 0.75rem !important;
+  color: #a0aec0 !important;
+}
+.ltag__user .ltag__user__user {
+  padding-right: 0.75rem !important;
+}
+.ltag__user .ltag__user__social {
+  color: #fff !important;
+  font-size: 0.75rem !important;
+}
+.ltag__user .ltag__user__social a {
+  display: inline !important;
+  padding-top: 0.5rem !important;
+  margin-left: 0.25rem !important;
+}
+.ltag-github-readme-tag {
+  align-self: center !important;
+  max-width: 36rem !important;
+  border-width: 2px !important;
+  padding: 1rem !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+}
+@media (min-width: 768px) {
+  .ltag-github-readme-tag {
+    margin-right: 10rem !important;
+    margin-left: 10rem !important;
+  }
+  .ltag-github-readme-tag h2 {
+    font-size: 1.5rem !important;
+  }
+  .ltag-github-readme-tag h3 {
+    font-size: 1.25rem !important;
+  }
+}
+.ltag-github-readme-tag .ltag-github-body {
+  display: none !important;
+}
+.ltag-github-readme-tag h1 {
+  text-decoration: none !important;
+  font-size: 1.125rem !important;
+}
+.ltag-github-readme-tag h2 {
+  text-decoration: none !important;
+  font-size: 0.875rem !important;
+}
+.ltag-github-readme-tag a {
+  text-decoration: none !important;
+  font-size: 0.875rem !important;
+}
+.ltag-github-readme-tag img {
+  width: 1.25rem !important;
+  margin-top: 0 !important;
+  display: inline !important;
+}
+.ltag-github-readme-tag .readme-overview {
+  text-align: center !important;
+}
+.ltag-github-readme-tag .gh-btn-container {
+  text-align: center !important;
+}
+.ltag-github-readme-tag .gh-btn {
+  background-color: #1a202c !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  border-radius: 0.25rem !important;
+}

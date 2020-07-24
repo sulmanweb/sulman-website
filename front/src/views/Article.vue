@@ -33,7 +33,7 @@ export default {
   name: "Article",
   data() {
     return {
-      post: {}
+      post: {},
     };
   },
   methods: {
@@ -46,13 +46,13 @@ export default {
       } catch (err) {
         console.error(err);
       }
-    }
+    },
   },
   mounted() {
     this.getPost();
   },
   updated() {
-    document.querySelectorAll("pre.highlight").forEach(block => {
+    document.querySelectorAll("pre.highlight").forEach((block) => {
       hljs.highlightBlock(block);
     });
     var anchors = document.querySelectorAll("[class*=ltag] a");
@@ -72,52 +72,52 @@ export default {
         {
           name: "description",
           content:
-            "#RubyOnRails #NodeJS #VueJS Experienced Web App Dev in Lahore, Pakistan"
+            "#RubyOnRails #NodeJS #VueJS Experienced Web App Dev in Lahore, Pakistan",
         },
         { property: "og:title", content: this.post.title + " <- SulmanWeb" },
         {
           property: "og:site_name",
-          content: this.post.title + " <- SulmanWeb"
+          content: this.post.title + " <- SulmanWeb",
         },
         { property: "og:type", content: "website" },
         {
           property: "og:url",
-          content: "https://sulmanweb.com/blog/" + this.post.slug
+          content: "https://sulmanweb.com/blog/" + this.post.slug,
         },
         {
           property: "og:image",
-          content: this.post.social_image
+          content: this.post.social_image,
         },
         {
           property: "og:description",
-          content: this.post.description
+          content: this.post.description,
         },
         { name: "twitter:card", content: "summary" },
         {
           name: "twitter:site",
-          content: "https://sulmanweb.com/blog/" + this.post.slug
+          content: "https://sulmanweb.com/blog/" + this.post.slug,
         },
         { name: "twitter:title", content: this.post.title + " <- SulmanWeb" },
         {
           name: "twitter:description",
-          content: this.post.description
+          content: this.post.description,
         },
         { name: "twitter:creator", content: "@sulmanweb" },
         {
           name: "twitter:image:src",
-          content: this.post.social_image
+          content: this.post.social_image,
         },
         { itemprop: "name", content: this.post.title + " <- SulmanWeb" },
         {
           itemprop: "description",
-          content: this.post.description
+          content: this.post.description,
         },
         {
           itemprop: "image",
-          content: this.post.social_image
-        }
-      ]
+          content: this.post.social_image,
+        },
+      ],
     };
-  }
+  },
 };
 </script>
