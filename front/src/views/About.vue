@@ -76,7 +76,7 @@
         >Experiences</h2>
         <div class="border-b-2 border-gray-400 pb-4 pt-8">
           <h3 class="text-xl font-medium">
-            Software Engineer @
+            Principal Software Engineer @
             <a
               class="underline"
               href="https://www.mailmunch.com"
@@ -85,9 +85,7 @@
           </h3>
           <p class="text-sm italic">Aug 2019 - Continued</p>
           <p>
-            Managing Ruby on Rails App structures and transferring the APIs to
-            NodeJS Apollo GraphQL. Implements the backend of new features and
-            errors of the app.
+            Manages the Backend Ruby on Rails with extensive background jobs using Sidekiq multi-threaded systems. Manages the integration with around 15 third party apps including Shopify, Wix, and Mailchimp. Also, do some conversion of front-end APIs from Rails to NodeJS GraphQL.
           </p>
         </div>
         <div class="border-b-2 border-gray-400 pb-4 pt-8">
